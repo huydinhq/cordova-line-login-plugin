@@ -9,8 +9,16 @@ allprojects {
   }
 }
 
+android {
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
 dependencies {
-  compile "com.android.support:appcompat-v7:25.4.0"
-  compile "com.android.support:customtabs:25.4.0"
-  compile(name:'line-sdk-4.0.8', ext:'aar')
+  compile "com.android.support:appcompat-v7:27.0.2"
+  compile "com.android.support:customtabs:27.0.2"
+  compile "com.madgag.spongycastle:prov:1.58.0.0"
+  compile(name:'line-sdk-5.0.1', ext:'aar')
 }
