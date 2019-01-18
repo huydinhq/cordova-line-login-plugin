@@ -65,6 +65,7 @@
     </config-file>
 
     <framework src="src/android/line.gradle" custom="true" type="gradleReference" />
+    <hook type="after_prepare" src="src/scripts/after_prepare.js"/>
     
   </platform>
 
